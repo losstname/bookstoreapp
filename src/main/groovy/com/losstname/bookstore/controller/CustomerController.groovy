@@ -1,6 +1,7 @@
 package com.losstname.bookstore.controller
 
 import org.springframework.stereotype.Controller
+import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 
 /**
@@ -9,5 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping
 @Controller
 @RequestMapping("/customer")
 class CustomerController {
+
+    @GetMapping(["", "/"])
+    String index(){
+        return "customer"
+    }
 
 }

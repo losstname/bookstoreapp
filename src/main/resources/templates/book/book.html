@@ -7,5 +7,10 @@
 <body>
 
 <h1>Book List</h1>
+
+<span th:if="${success}" th:text="${success}"></span>
+
+<a th:href="@{/book/add-book}">Add New Book</a>
+
 </body>
 </html>

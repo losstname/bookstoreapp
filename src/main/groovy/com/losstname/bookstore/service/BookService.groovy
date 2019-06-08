@@ -19,4 +19,9 @@ class BookService {
         return b
     }
 
+    List<Book> findAll(){
+        List<Book> books = bookRepository.findAll()
+        return books
+    }
+
 }
